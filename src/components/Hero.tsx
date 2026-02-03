@@ -45,7 +45,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-            Ulisses Giovanini
+            Spine Specialist
             <br />
             <span className="gradient-text">Coluna Vertebral</span>
           </h1>

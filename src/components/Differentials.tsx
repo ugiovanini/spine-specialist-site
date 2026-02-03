@@ -30,7 +30,7 @@ const Differentials = () => {
     {
       icon: Home,
       title: "Atendimento Domiciliar",
-      description: "Conforto do seu lar ou escritório para seu tratamento.",
+      description: "Conforto do seu lar ou escritório para seu tratamento. (vide cobertura)",
     },
   ];
 
@@ -102,7 +102,7 @@ const Differentials = () => {
               </div>
               <h4 className="font-bold text-lg text-foreground mb-2">Como</h4>
               <p className="text-sm text-muted-foreground">
-                Abordagem integrada e personalizada baseada em ciência do movimento.
+                Abordagem integrada e personalizada baseada em ciência.
               </p>
             </div>
             <div className="text-center p-8 bg-background rounded-2xl border border-border">
