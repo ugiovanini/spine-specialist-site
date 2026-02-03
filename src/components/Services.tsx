@@ -27,12 +27,6 @@ const Services = () => {
         "Avaliação funcional completa baseada em evidências científicas para tratamento preciso.",
     },
     {
-      icon: Heart,
-      title: "Massoterapia",
-      description:
-        "Técnicas terapêuticas para alívio de tensões musculares e melhora da circulação.",
-    },
-    {
       icon: Zap,
       title: "Performance Funcional",
       description:

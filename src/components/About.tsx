@@ -33,8 +33,6 @@ const About = () => {
               Formação
             </h2>
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Ulisses Giovanini
-              <br />
               <span className="gradient-text">Especialista em Coluna</span>
             </h3>
 
