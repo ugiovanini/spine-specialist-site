@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 import heroSpine from "@/assets/hero-spine.jpg";
+import spineIcon from "@/assets/spine-icon.png";
 
 const Hero = () => {
   return (
@@ -38,58 +39,69 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-20">
-        <div className="max-w-3xl animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            Especialista em Coluna Vertebral
-          </div>
+        <div className="flex items-start justify-between gap-8">
+          <div className="max-w-3xl animate-fade-in">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+              Especialista em Coluna Vertebral
+            </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-            <span className="text-5xl md:text-6xl lg:text-7xl">Spine Specialist</span>
-            <br />
-            <span className="gradient-text">Coluna Vertebral</span>
-          </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+              <span className="text-5xl md:text-6xl lg:text-7xl">Spine Specialist</span>
+              <br />
+              <span className="gradient-text">Coluna Vertebral</span>
+            </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-            Aliviar a dor na coluna, devolver mobilidade e elevar sua performance 
-            funcional para que você volte a trabalhar, treinar e viver sem limitações, 
-            com segurança e resultados duradouros.
-          </p>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
+              Aliviar a dor na coluna, devolver mobilidade e elevar sua performance 
+              funcional para que você volte a trabalhar, treinar e viver sem limitações, 
+              com segurança e resultados duradouros.
+            </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="lg" asChild>
-              <a href="https://wa.me/5511983544301" target="_blank" rel="noopener noreferrer">
-                <Phone className="w-5 h-5" />
-                Agendar Avaliação
-              </a>
-            </Button>
-            <Button variant="outline" size="lg" asChild>
-              <a href="#servicos">
-                Conheça os Tratamentos
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </Button>
-          </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button variant="hero" size="lg" asChild>
+                <a href="https://wa.me/5511983544301" target="_blank" rel="noopener noreferrer">
+                  <Phone className="w-5 h-5" />
+                  Agendar Avaliação
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <a href="#servicos">
+                  Conheça os Tratamentos
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+              </Button>
+            </div>
 
-          <div className="mt-12 flex flex-wrap gap-8">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">+</span>
+            <div className="mt-12 flex flex-wrap gap-8">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-primary">+</span>
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-foreground">10</p>
+                  <p className="text-sm text-muted-foreground">Anos de Experiência</p>
+                </div>
               </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">10</p>
-                <p className="text-sm text-muted-foreground">Anos de Experiência</p>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-primary">4</span>
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-foreground">Especializações</p>
+                  <p className="text-sm text-muted-foreground">Em Coluna Vertebral</p>
+                </div>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">4</span>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">Especializações</p>
-                <p className="text-sm text-muted-foreground">Em Coluna Vertebral</p>
-              </div>
-            </div>
+          </div>
+
+          {/* Spine Image - Right side */}
+          <div className="hidden lg:flex items-start justify-end flex-shrink-0">
+            <img 
+              src={spineIcon} 
+              alt="Coluna vertebral" 
+              className="w-64 xl:w-80 h-auto object-contain"
+            />
           </div>
         </div>
       </div>

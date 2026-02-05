@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import spineIcon from "@/assets/spine-icon.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,19 +52,12 @@ const Header = () => {
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <div className="flex flex-col items-center gap-2">
-              <Button variant="hero" size="default" asChild>
-                <a href="https://wa.me/5511983544301" target="_blank" rel="noopener noreferrer">
-                  <Phone className="w-4 h-4" />
-                  Agendar Consulta
-                </a>
-              </Button>
-              <img 
-                src={spineIcon} 
-                alt="Coluna vertebral" 
-                className="w-32 h-auto object-contain"
-              />
-            </div>
+            <Button variant="hero" size="default" asChild>
+              <a href="https://wa.me/5511983544301" target="_blank" rel="noopener noreferrer">
+                <Phone className="w-4 h-4" />
+                Agendar Consulta
+              </a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
