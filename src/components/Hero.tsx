@@ -96,11 +96,11 @@ const Hero = () => {
           </div>
 
           {/* Spine Image - Right side */}
-          <div className="hidden lg:flex items-start justify-end flex-shrink-0">
+          <div className="flex items-start justify-end flex-shrink-0">
             <img 
               src={spineIcon} 
               alt="Coluna vertebral" 
-              className="w-64 xl:w-80 h-auto object-contain"
+              className="w-32 md:w-48 lg:w-64 xl:w-80 h-auto object-contain"
             />
           </div>
         </div>
