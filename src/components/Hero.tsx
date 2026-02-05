@@ -45,7 +45,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-            Spine Specialist
+            <span className="text-5xl md:text-6xl lg:text-7xl">Spine Specialist</span>
             <br />
             <span className="gradient-text">Coluna Vertebral</span>
           </h1>
@@ -79,15 +79,6 @@ const Hero = () => {
               <div>
                 <p className="text-2xl font-bold text-foreground">10</p>
                 <p className="text-sm text-muted-foreground">Anos de Experiência</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">+</span>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">5000</p>
-                <p className="text-sm text-muted-foreground">Pacientes Atendidos</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
