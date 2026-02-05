@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import spineIcon from "@/assets/spine-icon.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,6 +59,15 @@ const Header = () => {
                 Agendar Consulta
               </a>
             </Button>
+          </div>
+
+          {/* Spine Image - Desktop only */}
+          <div className="hidden lg:block absolute right-4 top-20">
+            <img 
+              src={spineIcon} 
+              alt="Coluna vertebral" 
+              className="w-48 h-auto object-contain"
+            />
           </div>
 
           {/* Mobile Menu Button */}
