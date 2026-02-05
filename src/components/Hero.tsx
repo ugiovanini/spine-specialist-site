@@ -39,15 +39,15 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-20">
-        <div className="flex items-start justify-between gap-8">
-          <div className="max-w-3xl animate-fade-in">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 md:gap-8">
+          <div className="max-w-3xl animate-fade-in order-2 md:order-1">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               Especialista em Coluna Vertebral
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              <span className="text-5xl md:text-6xl lg:text-7xl">Spine Specialist</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Spine Specialist</span>
               <br />
               <span className="gradient-text">Coluna Vertebral</span>
             </h1>
@@ -96,11 +96,11 @@ const Hero = () => {
           </div>
 
           {/* Spine Image - Right side */}
-          <div className="flex items-start justify-end flex-shrink-0">
+          <div className="flex items-center justify-center md:items-start md:justify-end flex-shrink-0 order-1 md:order-2">
             <img 
               src={spineIcon} 
               alt="Coluna vertebral" 
-              className="w-32 md:w-48 lg:w-64 xl:w-80 h-auto object-contain"
+              className="w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 h-auto object-contain"
             />
           </div>
         </div>
