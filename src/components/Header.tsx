@@ -53,21 +53,19 @@ const Header = () => {
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="hero" size="default" asChild>
-              <a href="https://wa.me/5511983544301" target="_blank" rel="noopener noreferrer">
-                <Phone className="w-4 h-4" />
-                Agendar Consulta
-              </a>
-            </Button>
-          </div>
-
-          {/* Spine Image - Desktop only */}
-          <div className="hidden lg:block absolute right-4 top-20">
-            <img 
-              src={spineIcon} 
-              alt="Coluna vertebral" 
-              className="w-48 h-auto object-contain"
-            />
+            <div className="flex flex-col items-center gap-2">
+              <Button variant="hero" size="default" asChild>
+                <a href="https://wa.me/5511983544301" target="_blank" rel="noopener noreferrer">
+                  <Phone className="w-4 h-4" />
+                  Agendar Consulta
+                </a>
+              </Button>
+              <img 
+                src={spineIcon} 
+                alt="Coluna vertebral" 
+                className="w-32 h-auto object-contain"
+              />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
