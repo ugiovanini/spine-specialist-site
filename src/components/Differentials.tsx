@@ -10,7 +10,7 @@ const Differentials = () => {
     {
       icon: Award,
       title: "Especialização Profunda",
-      description: "Foco exclusivo em coluna vertebral com múltiplas certificações.",
+      description: "Foco exclusivo em coluna vertebral com múltiplas especializações (pós-graduações e certificações).",
     },
     {
       icon: CircleCheck,
