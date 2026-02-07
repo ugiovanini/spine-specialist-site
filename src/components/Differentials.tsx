@@ -35,7 +35,7 @@ const Differentials = () => {
   ];
 
   return (
-    <section id="diferenciais" className="py-20 md:py-32 bg-primary/5 relative">
+    <section id="diferenciais" className="py-12 md:py-16 bg-primary/5 relative">
       {/* Wave Top */}
       <div className="absolute top-0 left-0 right-0 -translate-y-full overflow-hidden">
         <svg
@@ -85,7 +85,7 @@ const Differentials = () => {
         </div>
 
         {/* Golden Circle */}
-        <div className="mt-20 max-w-4xl mx-auto">
+        <div className="mt-12 max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center p-8 bg-background rounded-2xl border border-border">
               <div className="w-16 h-16 rounded-full bg-primary mx-auto flex items-center justify-center mb-4">

@@ -74,7 +74,7 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="mt-12 flex flex-wrap gap-8">
+            <div className="mt-12 mb-24 flex flex-wrap gap-8">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <span className="text-2xl font-bold text-primary">+</span>
