@@ -15,7 +15,7 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "Início", href: "#hero" },
+    { label: "Início", href: "/" },
     { label: "Sobre", href: "#sobre" },
     { label: "Serviços", href: "#servicos" },
     { label: "Diferenciais", href: "#diferenciais" },
@@ -33,7 +33,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <a href="#hero" className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <span className="text-xl md:text-2xl font-bold text-primary">
               SPINE<span className="text-foreground">SPECIALIST</span>
             </span>
