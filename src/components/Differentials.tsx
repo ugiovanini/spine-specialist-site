@@ -10,7 +10,7 @@ const Differentials = () => {
     {
       icon: Award,
       title: "Especialização Profunda em Coluna Vertebral",
-      description: "Atuação clínica dedicada exclusivamente à coluna vertebral, sustentada por múltiplas pós-graduações e certificações avançadas. Esse foco absoluto permite diagnósticos mais precisos, intervenções direcionadas à causa do problema e maior previsibilidade de resultados.",
+      description: "Atuação clínica dedicada exclusivamente à coluna vertebral, sustentada por múltiplas pós-graduações e certificações avançadas que permitem avaliações clínicas mais detalhadas, intervenções direcionadas aos fatores associados ao problema e maior clareza na definição de condutas dentro do respeito a resposta individual ao tratamento.",
     },
     {
       icon: Stethoscope,
@@ -35,7 +35,7 @@ const Differentials = () => {
     {
       icon: RefreshCw,
       title: "Sustentabilidade Clínica e Prevenção",
-      description: "Os tratamentos são orientados a resultados duradouros, com ênfase em educação, prevenção de recidivas e autonomia do paciente. O objetivo é reduzir a dependência contínua de tratamentos e promover saúde a longo prazo.",
+      description: "Os tratamentos são planejados com foco na educação em saúde, na prevenção de recidivas e na autonomia do paciente, visando favorecer a manutenção dos benefícios alcançados.",
     },
     {
       icon: CalendarCheck,
@@ -125,7 +125,7 @@ const Differentials = () => {
               </div>
               <h4 className="font-bold text-lg text-foreground mb-2">O Quê</h4>
               <p className="text-sm text-muted-foreground">
-                Atendimento especializado em coluna vertebral, focado na causa da dor, na recuperação da mobilidade e na melhoria da performance funcional, com tratamentos seguros, progressivos e orientados a resultados duradouros.
+                Atendimento especializado em coluna vertebral, focado na causa da dor, na recuperação da mobilidade e na melhoria da performance funcional, com tratamentos seguros e progressivos, estruturados para favorecer a melhora funcional e da qualidade de vida.
               </p>
             </div>
           </div>

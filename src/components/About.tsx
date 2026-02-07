@@ -39,8 +39,8 @@ const About = () => {
             <p className="text-muted-foreground leading-relaxed mb-8">
               Profissional especializado em coluna vertebral com atuação baseada em 
               Ciência do Movimento, Quiropraxia, Osteopatia e Terapias Manuais Avançadas. 
-              Minha abordagem é integrada e personalizada, focada em resultados mensuráveis 
-              e sustentáveis.
+              Minha abordagem é integrada e personalizada, com acompanhamento da evolução 
+              funcional, foco na sustentabilidade e no respeito a individualidade.
             </p>
 
             <div className="space-y-4 mb-8">
