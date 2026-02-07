@@ -53,7 +53,7 @@ const Hero = () => {
               <span className="gradient-text">Coluna Vertebral</span>
             </div>
 
-            <div className="flex flex-col gap-4 p-6 bg-background/80 backdrop-blur-sm rounded-xl border border-border max-w-2xl mb-8">
+            <div className="flex flex-col gap-4 max-w-2xl mb-8">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Bone className="w-6 h-6 text-primary" />
