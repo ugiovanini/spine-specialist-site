@@ -41,21 +41,17 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-20">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 md:gap-8">
           <div className="max-w-3xl animate-fade-in order-2 md:order-1">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              Especialista em Coluna Vertebral
-            </div>
-
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Spine Specialist</span>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
+              <span className="gradient-text">Especialista em Coluna</span>
               <br />
-              <span className="gradient-text">Coluna Vertebral</span>
+              <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">na Grande São Paulo, ABC Paulista e Osasco</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-              Aliviar a dor na coluna, devolver mobilidade e elevar sua performance 
-              funcional para que você volte a trabalhar, treinar e viver sem limitações, 
-              com segurança e resultados duradouros.
+              Tratamento especializado para dores na coluna, hérnias de disco, 
+              lombalgias e outras condições vertebrais. Atendimento personalizado 
+              para aliviar a dor, devolver mobilidade e elevar sua performance 
+              funcional, com segurança e resultados duradouros.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
