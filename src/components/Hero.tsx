@@ -54,9 +54,9 @@ const Hero = () => {
             </div>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-              Aliviar a dor na coluna, devolver mobilidade e elevar sua performance 
-              funcional para que você volte a trabalhar, treinar e viver sem limitações, 
-              com segurança e resultados duradouros.
+              Recupere sua mobilidade e volte a viver com qualidade de vida.
+              <br />
+              Tratamento especializado em coluna vertebral, baseado em ciência, com avaliação clínica aprofundada e planos terapêuticos personalizados, focados na função, na segurança e na prevenção de recorrências.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
