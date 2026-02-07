@@ -11,6 +11,10 @@ import Videos from "./pages/Videos";
 import Audios from "./pages/Audios";
 import Notas from "./pages/Notas";
 import Legal from "./pages/Legal";
+// Draft pages for future local SEO - NOT linked anywhere
+import SaoPaulo from "./pages/SaoPaulo";
+import AbcPaulista from "./pages/AbcPaulista";
+import Osasco from "./pages/Osasco";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +32,10 @@ const App = () => (
           <Route path="/audios" element={<Audios />} />
           <Route path="/notas" element={<Notas />} />
           <Route path="/legal" element={<Legal />} />
+          {/* DRAFT PAGES - Local SEO (noindex, not linked) */}
+          <Route path="/sao-paulo" element={<SaoPaulo />} />
+          <Route path="/abc-paulista" element={<AbcPaulista />} />
+          <Route path="/osasco" element={<Osasco />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
