@@ -1,4 +1,4 @@
-import { Activity, Target, TrendingUp, Shield, Heart, Zap } from "lucide-react";
+import { Activity, Target, TrendingUp } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -19,24 +19,6 @@ const Services = () => {
       title: "Terapias Manuais",
       description:
         "Abordagens de cuidado em saúde que utilizam técnicas avançadas para avaliação, mobilização e manipulação para tratar músculos, articulações e tecidos. Têm como objetivo aliviar a dor, restaurar o movimento e favorecer a recuperação funcional do corpo com segurança e base científica.",
-    },
-    {
-      icon: Shield,
-      title: "Ciência do Movimento",
-      description:
-        "Avaliação funcional completa baseada em evidências científicas para tratamento preciso.",
-    },
-    {
-      icon: Heart,
-      title: "Massoterapia",
-      description:
-        "Técnicas terapêuticas para alívio de tensões musculares e melhora da circulação.",
-    },
-    {
-      icon: Zap,
-      title: "Performance Funcional",
-      description:
-        "Programas personalizados para elevar sua capacidade funcional no trabalho, treino e vida diária.",
     },
   ];
 
