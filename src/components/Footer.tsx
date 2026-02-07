@@ -101,7 +101,9 @@ const Footer = () => {
 
         <div className="border-t border-background/10 pt-8 text-center">
           <p className="text-sm text-background/60">
-            © {currentYear} Spine Specialist, todos os direitos reservados. Conteúdos, textos, imagens, logotipo e marca são de propriedade exclusiva, sendo vedada a reprodução sem autorização. As informações deste site têm caráter informativo e não substituem avaliação profissional individual. Os dados fornecidos são utilizados exclusivamente para contato e atendimento, conforme a Política de Privacidade e Proteção de Dados.
+            © {currentYear} Spine Specialist, todos os direitos reservados.
+            <br />
+            Conteúdos, textos, imagens, logotipo e marca são de propriedade exclusiva, sendo vedada a reprodução sem autorização. As informações deste site têm caráter informativo e não substituem avaliação profissional individual. Os dados fornecidos são utilizados exclusivamente para contato e atendimento, conforme a Política de Privacidade e Proteção de Dados.
           </p>
         </div>
       </div>
