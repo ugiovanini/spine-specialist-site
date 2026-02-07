@@ -1,4 +1,5 @@
 import { FileText, Video, Headphones, StickyNote } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Content = () => {
   const contentTypes = [
@@ -6,25 +7,25 @@ const Content = () => {
       icon: FileText,
       title: "Artigos",
       description: "Publicações científicas e informativas sobre saúde da coluna vertebral.",
-      href: "#artigos",
+      href: "/artigos",
     },
     {
       icon: Video,
       title: "Vídeos",
       description: "Conteúdo audiovisual com orientações e exercícios para sua coluna.",
-      href: "#videos",
+      href: "/videos",
     },
     {
       icon: Headphones,
       title: "Áudios",
       description: "Podcasts e orientações em áudio para você ouvir onde estiver.",
-      href: "#audios",
+      href: "/audios",
     },
     {
       icon: StickyNote,
       title: "Notas",
       description: "Dicas rápidas e atualizações sobre cuidados com a coluna.",
-      href: "#notas",
+      href: "/notas",
     },
   ];
 
@@ -45,9 +46,9 @@ const Content = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {contentTypes.map((content, index) => (
-            <a
+            <Link
               key={index}
-              href={content.href}
+              to={content.href}
               className="group bg-background rounded-2xl p-6 border border-border card-hover text-center"
             >
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
@@ -59,7 +60,7 @@ const Content = () => {
               <p className="text-muted-foreground text-sm">
                 {content.description}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
