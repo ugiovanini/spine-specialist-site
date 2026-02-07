@@ -1,36 +1,51 @@
-import { CircleCheck, Award, BookOpen, Users, RefreshCw, Home } from "lucide-react";
+import { CircleCheck, Award, BookOpen, Users, RefreshCw, Home, ClipboardCheck, Target, Stethoscope, CalendarCheck } from "lucide-react";
 
 const Differentials = () => {
   const values = [
     {
       icon: BookOpen,
       title: "Ciência e Evidência",
-      description: "Tratamentos baseados nas melhores evidências científicas disponíveis.",
+      description: "Todos os tratamentos são fundamentados nas melhores evidências científicas disponíveis, diretrizes clínicas internacionais e prática profissional validada. Cada conduta é escolhida com critério, segurança e responsabilidade, priorizando eficácia real e risco mínimo ao paciente.",
     },
     {
       icon: Award,
-      title: "Especialização Profunda",
-      description: "Foco exclusivo em coluna vertebral com múltiplas especializações (pós-graduações e certificações).",
+      title: "Especialização Profunda em Coluna Vertebral",
+      description: "Atuação clínica dedicada exclusivamente à coluna vertebral, sustentada por múltiplas pós-graduações e certificações avançadas. Esse foco absoluto permite diagnósticos mais precisos, intervenções direcionadas à causa do problema e maior previsibilidade de resultados.",
     },
     {
-      icon: CircleCheck,
+      icon: Stethoscope,
+      title: "Avaliação Clínica Avançada",
+      description: "Avaliação completa e estruturada, integrando exame físico funcional, análise postural, testes específicos e histórico clínico detalhado. Essa abordagem permite compreender o problema em profundidade e definir o melhor plano terapêutico desde o primeiro atendimento.",
+    },
+    {
+      icon: ClipboardCheck,
+      title: "Plano Terapêutico com Metas Claras",
+      description: "Cada paciente recebe um plano de tratamento individualizado, organizado por fases, com objetivos definidos, critérios de evolução e prazos estimados. Isso garante transparência, engajamento e acompanhamento real do progresso ao longo do cuidado.",
+    },
+    {
+      icon: Target,
       title: "Resultado Funcional",
-      description: "Metas claras de recuperação para trabalho, treino e vida diária.",
+      description: "O foco do tratamento é a recuperação funcional, permitindo retorno seguro às atividades do trabalho, do esporte e da vida diária. Mais do que aliviar a dor, buscamos restaurar movimento, confiança e qualidade de vida de forma sustentável.",
     },
     {
       icon: Users,
       title: "Centralidade no Paciente",
-      description: "Tratamento personalizado de acordo com suas necessidades específicas.",
+      description: "O cuidado é centrado na pessoa, não apenas no diagnóstico. Cada plano considera sua rotina, profissão, nível de atividade, objetivos pessoais e histórico de saúde, garantindo um tratamento verdadeiramente personalizado.",
     },
     {
       icon: RefreshCw,
-      title: "Sustentabilidade Clínica",
-      description: "Foco em resultados duradouros e prevenção de recidivas.",
+      title: "Sustentabilidade Clínica e Prevenção",
+      description: "Os tratamentos são orientados a resultados duradouros, com ênfase em educação, prevenção de recidivas e autonomia do paciente. O objetivo é reduzir a dependência contínua de tratamentos e promover saúde a longo prazo.",
+    },
+    {
+      icon: CalendarCheck,
+      title: "Acompanhamento Pós-Tratamento",
+      description: "Mesmo após a fase intensiva do cuidado, o paciente pode contar com acompanhamento clínico periódico, reavaliações e ajustes preventivos, garantindo manutenção dos resultados e segurança ao longo do tempo.",
     },
     {
       icon: Home,
       title: "Atendimento Domiciliar",
-      description: "Conforto do seu lar ou escritório para seu tratamento. (vide cobertura)",
+      description: "Quando indicado, oferecemos atendimento no conforto do seu lar ou ambiente profissional, mantendo o mesmo padrão técnico, ético e clínico do consultório, conforme critérios de cobertura e segurança.",
     },
   ];
 
@@ -52,7 +67,7 @@ const Differentials = () => {
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
             Por que nos escolher
           </h2>
@@ -60,8 +75,7 @@ const Differentials = () => {
             Nossos <span className="gradient-text">Diferenciais</span>
           </h3>
           <p className="text-muted-foreground">
-            Valores que guiam nossa prática e garantem os melhores resultados 
-            para sua saúde.
+            Valores clínicos que orientam cada decisão terapêutica e garantem segurança, previsibilidade e resultados reais para sua saúde.
           </p>
         </div>
 
@@ -69,17 +83,17 @@ const Differentials = () => {
           {values.map((value, index) => (
             <div
               key={index}
-              className="flex gap-4 p-6 bg-background rounded-xl border border-border card-hover"
+              className="flex flex-col gap-4 p-6 bg-background rounded-xl border border-border card-hover"
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <value.icon className="w-6 h-6 text-primary" />
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <value.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h4 className="font-semibold text-foreground">{value.title}</h4>
               </div>
-              <div>
-                <h4 className="font-semibold text-foreground mb-2">{value.title}</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {value.description}
-                </p>
-              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {value.description}
+              </p>
             </div>
           ))}
         </div>
