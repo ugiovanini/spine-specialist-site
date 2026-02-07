@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, Bone } from "lucide-react";
 import heroSpine from "@/assets/hero-spine.jpg";
 import spineIcon from "@/assets/spine-icon.png";
 
@@ -53,11 +53,19 @@ const Hero = () => {
               <span className="gradient-text">Coluna Vertebral</span>
             </div>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-              Recupere sua mobilidade e volte a viver com qualidade de vida.
-              <br />
-              Tratamento especializado em coluna vertebral, baseado em ciência, com avaliação clínica aprofundada e planos terapêuticos personalizados, focados na função, na segurança e na prevenção de recorrências.
-            </p>
+            <div className="flex flex-col gap-4 p-6 bg-background/80 backdrop-blur-sm rounded-xl border border-border max-w-2xl mb-8">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Bone className="w-6 h-6 text-primary" />
+                </div>
+                <h2 className="font-semibold text-foreground text-lg md:text-xl">
+                  Recupere sua mobilidade e volte a viver com qualidade de vida
+                </h2>
+              </div>
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                Tratamento especializado em coluna vertebral, baseado em ciência, com avaliação clínica aprofundada e planos terapêuticos personalizados, focados na função, na segurança e na prevenção de recorrências.
+              </p>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="lg" asChild>
