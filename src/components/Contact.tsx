@@ -17,8 +17,9 @@ const Contact = () => {
               Agende sua <span className="gradient-text">Avaliação</span>
             </h3>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Dê o primeiro passo para sair do ciclo da dor. Entre em contato e 
-              agende sua avaliação personalizada.
+              Dê o primeiro passo para sair do ciclo da dor.
+              <br />
+              Entre em contato e agende sua avaliação personalizada.
             </p>
           </div>
 
