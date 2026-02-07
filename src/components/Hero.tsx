@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, Bone } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import heroSpine from "@/assets/hero-spine.jpg";
 import spineIcon from "@/assets/spine-icon.png";
+import spineVertebraIcon from "@/assets/spine-vertebra-icon.png";
 
 const Hero = () => {
   return (
@@ -56,7 +57,7 @@ const Hero = () => {
             <div className="flex flex-col gap-4 max-w-2xl mb-8">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Bone className="w-6 h-6 text-primary" />
+                  <img src={spineVertebraIcon} alt="Coluna vertebral" className="w-6 h-6" />
                 </div>
                 <h2 className="font-semibold text-foreground text-lg md:text-xl">
                   Recupere sua mobilidade e volte a viver com qualidade de vida
