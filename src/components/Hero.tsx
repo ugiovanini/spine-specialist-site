@@ -46,11 +46,12 @@ const Hero = () => {
               Especialista em Coluna Vertebral
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+            <h1 className="sr-only">Especialista em Coluna na Grande São Paulo, ABC Paulista e Osasco</h1>
+            <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6" aria-hidden="true">
               <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Spine Specialist</span>
               <br />
               <span className="gradient-text">Coluna Vertebral</span>
-            </h1>
+            </div>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
               Aliviar a dor na coluna, devolver mobilidade e elevar sua performance 
