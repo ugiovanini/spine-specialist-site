@@ -3,10 +3,10 @@ import specialistPortrait from "@/assets/specialist-portrait.jpg";
 
 const About = () => {
   const credentials = [
-    "Tecnologia em Quiropraxia",
-    "Especialista em Osteopatia",
-    "Especialista em Quiropraxia",
-    "Especialista em Fisioterapia nas Algias Posturais da Coluna Vertebral",
+    "Graduado em Quiropraxia",
+    "Pós-graduado em Osteopatia",
+    "Pós-graduado em Quiropraxia",
+    "Pós-graduado em Fisioterapia nas Algias Posturais da Coluna Vertebral",
   ];
 
   return (
