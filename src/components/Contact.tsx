@@ -3,7 +3,7 @@ import { Phone, Globe, MapPin, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-20 md:py-32 relative overflow-hidden">
+    <section id="contato" className="py-12 md:py-16 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 -z-10" />
 
