@@ -18,7 +18,7 @@ const Services = () => {
       icon: TrendingUp,
       title: "Terapias Manuais",
       description:
-        "Técnicas avançadas de manipulação e mobilização para restaurar a função e aliviar tensões.",
+        "Abordagens de cuidado em saúde que utilizam técnicas de manipulação avançada para avaliação, mobilização e manipulação para tratar músculos, articulações e tecidos. Têm como objetivo aliviar a dor, restaurar o movimento e favorecer a recuperação funcional do corpo com segurança e base científica.",
     },
     {
       icon: Shield,
