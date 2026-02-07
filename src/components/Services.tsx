@@ -23,7 +23,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 md:py-32 relative overflow-hidden">
+    <section id="servicos" className="py-16 md:py-24 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent -z-10" />
 
