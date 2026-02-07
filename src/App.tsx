@@ -10,6 +10,7 @@ import Artigos from "./pages/Artigos";
 import Videos from "./pages/Videos";
 import Audios from "./pages/Audios";
 import Notas from "./pages/Notas";
+import Legal from "./pages/Legal";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/videos" element={<Videos />} />
           <Route path="/audios" element={<Audios />} />
           <Route path="/notas" element={<Notas />} />
+          <Route path="/legal" element={<Legal />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -81,25 +83,28 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-background mb-4">Legal</h4>
             <nav className="flex flex-col gap-2">
-              <a
-                href="#cookies"
+              <Link
+                to="/legal"
                 className="text-sm text-background/70 hover:text-primary transition-colors"
               >
                 Cookies
-              </a>
-              <a
-                href="#privacidade"
+              </Link>
+              <Link
+                to="/legal"
                 className="text-sm text-background/70 hover:text-primary transition-colors"
               >
                 Políticas, Privacidade e Proteção de Dados
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
 
         <div className="border-t border-background/10 pt-8 text-center">
           <p className="text-sm text-background/60">
-            © {currentYear} Spine Specialist. Todos os direitos reservados. Conteúdos, textos, imagens, logotipo e marca são de propriedade exclusiva, sendo vedada a reprodução sem autorização. As informações deste site têm caráter informativo e não substituem avaliação profissional individual. Os dados fornecidos são utilizados exclusivamente para contato e atendimento, conforme a Política de Privacidade e Proteção de Dados.
+            © {currentYear} Spine Specialist.
+            <br />
+            <br />
+            Todos os direitos reservados. Conteúdos, textos, imagens, logotipo e marca são de propriedade exclusiva, sendo vedada a reprodução sem autorização. As informações deste site têm caráter informativo e não substituem avaliação profissional individual. Os dados fornecidos são utilizados exclusivamente para contato e atendimento, conforme a Política de Privacidade e Proteção de Dados.
           </p>
         </div>
       </div>
