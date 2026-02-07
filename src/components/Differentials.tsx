@@ -107,7 +107,7 @@ const Differentials = () => {
               </div>
               <h4 className="font-bold text-lg text-foreground mb-2">Por Quê</h4>
               <p className="text-sm text-muted-foreground">
-                Porque viver com dor na coluna limita trabalho, treino e autonomia.
+                Porque viver com dor na coluna limita o trabalho, o desempenho físico, a autonomia e a qualidade de vida. Acreditamos que ninguém deve conviver com dor ou restrições quando existe tratamento seguro, baseado em ciência e focado em recuperar função e confiança no movimento.
               </p>
             </div>
             <div className="text-center p-8 bg-background rounded-2xl border border-border">
@@ -116,7 +116,7 @@ const Differentials = () => {
               </div>
               <h4 className="font-bold text-lg text-foreground mb-2">Como</h4>
               <p className="text-sm text-muted-foreground">
-                Abordagem integrada e personalizada baseada em ciência.
+                Por meio de uma abordagem clínica especializada, integrada e personalizada, fundamentada em evidência científica, avaliação aprofundada e planos terapêuticos com metas claras, respeitando a rotina, os objetivos e a realidade de cada paciente.
               </p>
             </div>
             <div className="text-center p-8 bg-background rounded-2xl border border-border">
@@ -125,7 +125,7 @@ const Differentials = () => {
               </div>
               <h4 className="font-bold text-lg text-foreground mb-2">O Quê</h4>
               <p className="text-sm text-muted-foreground">
-                Atendimento especializado focado em dor, mobilidade e performance.
+                Atendimento especializado em coluna vertebral, focado na causa da dor, na recuperação da mobilidade e na melhoria da performance funcional, com tratamentos seguros, progressivos e orientados a resultados duradouros.
               </p>
             </div>
           </div>
