@@ -6,13 +6,13 @@ const Services = () => {
       icon: Activity,
       title: "Quiropraxia",
       description:
-        "Técnicas especializadas para correção da biomecânica da coluna, promovendo alívio da dor e melhora da função.",
+        "Abordagem da área da saúde focada no cuidado da coluna vertebral e das articulações, ajudando o corpo a funcionar melhor por meio de ajustes manuais seguros e precisos. Seu objetivo é aliviar dores, melhorar o movimento e apoiar o sistema nervoso, favorecendo a saúde global do organismo.",
     },
     {
       icon: Target,
       title: "Osteopatia",
       description:
-        "Abordagem holística que trata o corpo como um todo, identificando e corrigindo disfunções estruturais.",
+        "Abordagem de cuidado em saúde que entende o corpo como uma unidade integrada e busca promover a autocura por meio do equilíbrio entre ossos, músculos, articulações, nervos e circulação. Utiliza avaliação clínica e técnicas manuais para melhorar a função do corpo e apoiar a saúde global.",
     },
     {
       icon: TrendingUp,
