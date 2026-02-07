@@ -46,19 +46,16 @@ const Hero = () => {
               Especialista em Coluna Vertebral
             </div>
 
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
-              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary">Spine Specialist</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Spine Specialist</span>
               <br />
-              <span className="gradient-text">Especialista em Coluna na Grande São Paulo, ABC Paulista e Osasco</span>
+              <span className="gradient-text">Coluna Vertebral</span>
             </h1>
 
-            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-              A Spine Specialist oferece avaliação e cuidado especializado para quem sofre com 
-              dores na coluna, hérnias de disco, lombalgias, cervicalgias e outras condições 
-              que afetam a qualidade de vida. Atendemos na Grande São Paulo, ABC Paulista e 
-              região de Osasco, com abordagem integrada e personalizada baseada em ciência. 
-              Nosso objetivo é aliviar sua dor, devolver mobilidade e elevar sua performance 
-              funcional. Agende sua avaliação e dê o primeiro passo para viver sem limitações.
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
+              Aliviar a dor na coluna, devolver mobilidade e elevar sua performance 
+              funcional para que você volte a trabalhar, treinar e viver sem limitações, 
+              com segurança e resultados duradouros.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
