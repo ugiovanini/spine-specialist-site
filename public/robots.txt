@@ -1,3 +1,4 @@
+# robots.txt para spinespecialist.com.br
 User-agent: Googlebot
 Allow: /
 
@@ -12,3 +13,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://spinespecialist.com.br/sitemap.xml
