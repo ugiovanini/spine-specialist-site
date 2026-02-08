@@ -18,6 +18,10 @@ function generateSitemapPlugin() {
         { path: '/videos', changefreq: 'weekly', priority: '0.8' },
         { path: '/audios', changefreq: 'weekly', priority: '0.8' },
         { path: '/notas', changefreq: 'daily', priority: '0.8' },
+        // Service SEO pages - indexable
+        { path: '/quiropraxia', changefreq: 'monthly', priority: '0.7' },
+        { path: '/osteopatia', changefreq: 'monthly', priority: '0.7' },
+        { path: '/terapias-manuais', changefreq: 'monthly', priority: '0.7' },
       ];
 
       const urls = routes
