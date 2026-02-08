@@ -59,8 +59,10 @@ const Hero = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <img src={spineVertebraIcon} alt="Coluna vertebral" className="w-6 h-6" />
                 </div>
-                <h2 className="font-semibold text-foreground text-lg md:text-xl">
-                  Cuidar da coluna é cuidar do corpo. Quando o corpo responde, tudo flui.
+              <h2 className="font-semibold text-foreground text-lg md:text-xl">
+                  Cuidar da coluna é cuidar do corpo.
+                  <br />
+                  Quando o corpo responde, tudo flui.
                 </h2>
               </div>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
