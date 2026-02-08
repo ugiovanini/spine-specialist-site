@@ -55,16 +55,6 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col gap-4 max-w-2xl mb-8">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <img src={spineVertebraIcon} alt="Coluna vertebral" className="w-6 h-6" />
-                </div>
-              <h2 className="font-semibold text-foreground text-lg md:text-xl">
-                  Cuidar da coluna é cuidar do corpo.
-                  <br />
-                  Quando o corpo responde, tudo flui.
-                </h2>
-              </div>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 Tratamento especializado em coluna vertebral, baseado em ciência, com avaliação clínica aprofundada e planos terapêuticos personalizados, focados na função, na segurança e na prevenção de recorrências.
               </p>
