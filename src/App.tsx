@@ -15,6 +15,10 @@ import Legal from "./pages/Legal";
 import SaoPaulo from "./pages/SaoPaulo";
 import AbcPaulista from "./pages/AbcPaulista";
 import Osasco from "./pages/Osasco";
+// Service SEO pages - indexable for Google
+import Quiropraxia from "./pages/Quiropraxia";
+import Osteopatia from "./pages/Osteopatia";
+import TerapiasManuais from "./pages/TerapiasManuais";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +40,10 @@ const App = () => (
           <Route path="/sao-paulo" element={<SaoPaulo />} />
           <Route path="/abc-paulista" element={<AbcPaulista />} />
           <Route path="/osasco" element={<Osasco />} />
+          {/* SERVICE SEO PAGES - Indexable for Google ranking */}
+          <Route path="/quiropraxia" element={<Quiropraxia />} />
+          <Route path="/osteopatia" element={<Osteopatia />} />
+          <Route path="/terapias-manuais" element={<TerapiasManuais />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
