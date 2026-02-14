@@ -35,7 +35,8 @@ const Header = () => {
           element.scrollIntoView({ behavior: "smooth" });
         }
       } else {
-        navigate("/" + href);
+        // Use native navigation to ensure browser handles hash scrolling
+        window.location.href = "/" + href;
       }
     }
   };
