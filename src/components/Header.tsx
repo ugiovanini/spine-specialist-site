@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +25,15 @@ const Header = () => {
     { label: "Conteúdo", href: "#conteudo" },
     { label: "Contato", href: "#contato" },
   ];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith("#")) {
+      if (location.pathname !== "/") {
+        e.preventDefault();
+        navigate("/" + href);
+      }
+    }
+  };
 
   return (
     <header
@@ -44,7 +56,8 @@ const Header = () => {
             {navItems.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={item.href.startsWith("#") ? "/" + item.href : item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
                 className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
               >
                 {item.label}
@@ -77,9 +90,9 @@ const Header = () => {
               {navItems.map((item) => (
                 <a
                   key={item.href}
-                  href={item.href}
+                  href={item.href.startsWith("#") ? "/" + item.href : item.href}
+                  onClick={(e) => { handleNavClick(e, item.href); setIsMobileMenuOpen(false); }}
                   className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
                 </a>
