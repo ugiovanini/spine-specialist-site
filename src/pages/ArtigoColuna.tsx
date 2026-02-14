@@ -45,14 +45,14 @@ const ArtigoColuna = () => {
 
           <article className="prose prose-lg max-w-none">
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              O que é a Coluna Vertebral? Conheça o Eixo Central da sua Saúde e Performance
+              Sua Coluna Vertebral, Saúde e Performance
             </h1>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Muitas vezes, só passamos a notar a existência da nossa coluna quando ela manifesta o primeiro sinal de desconforto. No entanto, para a Spine Specialist, a coluna vertebral é muito mais do que a origem de uma dor; ela é o eixo mestre do corpo humano, responsável por integrar nossa estrutura física ao comando central do sistema nervoso.
+              Muitas vezes, só passamos a notar a existência da nossa coluna quando ela manifesta o primeiro sinal de desconforto, no entanto, para a Spine Specialist, a coluna vertebral é muito mais do que a origem de uma dor. Ela é o eixo central e mestre do corpo humano, responsável por integrar nossa estrutura física, órgão e visceras ao comando central do sistema nervoso. Uma coluna equilibrada é, portanto, o alicerce para que todos os sistemas do seu corpo funcionem em harmonia e produza qualidade de vida
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Entender o que é a coluna e como ela funciona é o primeiro passo para sair de tratamentos paliativos e buscar uma solução definitiva para sua mobilidade e qualidade de vida.
+              Entender o que é a coluna vertebral e como ela funciona é o primeiro passo para sair de tratamentos paliativos e buscar resultados sustentáveis para sua mobilidade e autonomia na qualidade de vida.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">
@@ -80,10 +80,10 @@ const ArtigoColuna = () => {
               2. O Escudo Protetor do seu Sistema Nervoso
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Além da sustentação, a coluna possui uma função neurológica vital: ela forma o canal vertebral, um túnel ósseo que abriga e protege a medula espinhal.
+              Além da sustentação, a coluna possui uma função neurológica vital: ela forma o canal vertebral, um túnel ósseo que abriga e protege a medula espinhal (o "cabo" central de comunicação que conecta o cérebro ao restante do corpo, transmitindo comandos de movimento e todas as nossas sensações)
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              É através de pequenos espaços entre as vértebras (os forames) que as raízes nervosas saem para levar comandos de movimento e trazer sensações de todo o corpo. Quando ocorre uma subluxação — uma disfunção articular que afeta a mobilidade e o posicionamento dessas vértebras — essa comunicação pode ser interrompida, gerando dor, formigamento ou perda de força.
+              É através de pequenos espaços entre as vértebras (os forames) que as raízes nervosas saem para levar comandos de movimento e trazer sensações de todo o corpo. Quando ocorre uma subluxação (uma disfunção articular que afeta a mobilidade e o posicionamento dessas vértebras) essa comunicação pode ser interrompida, gerando dor, formigamento ou perda de força.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">
@@ -105,17 +105,14 @@ const ArtigoColuna = () => {
               4. Por que a Coluna Adoece?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              A vida moderna impõe desafios constantes a esse eixo. O sedentarismo, a má postura no trabalho e o uso excessivo de dispositivos eletrônicos forçam a coluna a posições para as quais ela não foi projetada.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              Esses microtraumas repetitivos levam a um processo de desgaste precoce, como a desidratação dos discos e a formação de osteófitos (bicos de papagaio), que limitam sua performance e geram dor recorrente.
+              A vida moderna impõe desafios constantes a esse eixo, como o sedentarismo, a má postura no trabalho e o uso excessivo de dispositivos eletrônicos forçam a coluna a posições para as quais ela não foi projetada, podendo, gerar microtraumas repetitivos que levam a um processo de desgaste precoce, como a desidratação dos discos e a formação de osteófitos (bicos de papagaio), que limitam sua performance e geram dor recorrente.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">
               O Diferencial Spine Specialist
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Na Spine Specialist, não tratamos apenas o sintoma local. Nossa abordagem é baseada na Ciência do Movimento e em{" "}
+              Na Spine Specialist, não tratamos apenas o sintoma local, pois a nossa abordagem é baseada na Ciência do Movimento e{" "}
               <Link to="/terapias-manuais" className="text-primary hover:underline font-medium">
                 Terapias Manuais Avançadas
               </Link>
@@ -127,18 +124,21 @@ const ArtigoColuna = () => {
               <Link to="/osteopatia" className="text-primary hover:underline font-medium">
                 Osteopatia
               </Link>
-              .
+              {" "}e nas bases da Práticas Integrativas e Complementares em Saúde (PICS, abordagens terapêuticas baseadas em conhecimentos tradicionais, focadas na visão integral do indivíduo: físico, mental, emocional e social
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Nosso foco é identificar exatamente onde a mecânica da sua coluna falhou e restaurar a função perdida. Entendemos que uma coluna saudável é o alicerce para uma vida de alta performance, seja no treino, no trabalho ou no lazer.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Você sente que sua coluna está limitando o seu potencial? Não aceite o paliativo. Recupere sua mobilidade e saia do ciclo da dor com quem é especialista em coluna vertebral.
+              Você sente que sua coluna está limitando o seu potencial e diminuindo a sua qualidade de vida?
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              Converse com a gente e saia do ciclo da dor com quem é especialista em coluna vertebral.
             </p>
 
             <div className="bg-secondary/30 rounded-2xl p-8 text-center mt-12">
               <p className="text-foreground font-medium mb-6 text-lg">
-                Agende sua avaliação especializada e descubra o que a ciência do movimento pode fazer por você.
+                Agende a sua avaliação especializada e descubra uma vida com melhor qualidade de vida
               </p>
               <Button variant="hero" size="lg" asChild>
                 <a
