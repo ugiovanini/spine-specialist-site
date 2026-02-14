@@ -27,11 +27,9 @@ const Header = () => {
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith("#")) {
-      if (location.pathname !== "/") {
-        e.preventDefault();
-        navigate("/" + href);
-      }
+    if (href.startsWith("#") && location.pathname !== "/") {
+      e.preventDefault();
+      window.location.href = "/" + href;
     }
   };
 
