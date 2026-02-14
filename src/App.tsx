@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Artigos from "./pages/Artigos";
+import ArtigoColuna from "./pages/ArtigoColuna";
 import Videos from "./pages/Videos";
 import Audios from "./pages/Audios";
 import Notas from "./pages/Notas";
@@ -32,6 +33,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/artigos" element={<Artigos />} />
+          <Route path="/artigos/o-que-e-coluna-vertebral" element={<ArtigoColuna />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/audios" element={<Audios />} />
           <Route path="/notas" element={<Notas />} />
