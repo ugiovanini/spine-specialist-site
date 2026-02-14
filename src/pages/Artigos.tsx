@@ -9,7 +9,7 @@ const Artigos = () => {
   const artigos = [
     {
       id: 1,
-      title: "O que é a Coluna Vertebral? Conheça o Eixo Central da sua Saúde e Performance",
+      title: "Sua Coluna Vertebral, Saúde e Performance",
       description: "Entenda a estrutura, função e importância da coluna vertebral para sua saúde, mobilidade e performance.",
       date: "14 Fev 2026",
       href: "/artigos/o-que-e-coluna-vertebral",
