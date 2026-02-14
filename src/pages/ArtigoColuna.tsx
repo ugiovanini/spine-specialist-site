@@ -131,8 +131,7 @@ const ArtigoColuna = () => {
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Você sente que sua coluna está limitando o seu potencial e diminuindo a sua qualidade de vida?
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
+              <br />
               Converse com a gente e saia do ciclo da dor com quem é especialista em coluna vertebral.
             </p>
 
