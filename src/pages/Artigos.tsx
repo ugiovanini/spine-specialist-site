@@ -9,18 +9,25 @@ const Artigos = () => {
   const artigos = [
     {
       id: 1,
+      title: "O que é a Coluna Vertebral? Conheça o Eixo Central da sua Saúde e Performance",
+      description: "Entenda a estrutura, função e importância da coluna vertebral para sua saúde, mobilidade e performance.",
+      date: "14 Fev 2026",
+      href: "/artigos/o-que-e-coluna-vertebral",
+    },
+    {
+      id: 2,
       title: "Hérnia de Disco: Causas, Sintomas e Tratamentos",
       description: "Entenda tudo sobre a hérnia de disco e as opções de tratamento disponíveis.",
       date: "15 Jan 2024",
     },
     {
-      id: 2,
+      id: 3,
       title: "Postura Correta no Trabalho",
       description: "Dicas práticas para manter uma postura saudável durante o expediente.",
       date: "10 Jan 2024",
     },
     {
-      id: 3,
+      id: 4,
       title: "Exercícios para Fortalecer a Coluna",
       description: "Conheça exercícios seguros para fortalecer a musculatura da coluna.",
       date: "05 Jan 2024",
@@ -51,17 +58,26 @@ const Artigos = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {artigos.map((artigo) => (
-              <Card key={artigo.id} className="card-hover">
-                <CardHeader>
-                  <CardTitle className="text-xl">{artigo.title}</CardTitle>
-                  <CardDescription>{artigo.date}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{artigo.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {artigos.map((artigo) => {
+              const cardContent = (
+                <Card className="card-hover">
+                  <CardHeader>
+                    <CardTitle className="text-xl">{artigo.title}</CardTitle>
+                    <CardDescription>{artigo.date}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{artigo.description}</p>
+                  </CardContent>
+                </Card>
+              );
+              return artigo.href ? (
+                <Link key={artigo.id} to={artigo.href}>
+                  {cardContent}
+                </Link>
+              ) : (
+                <div key={artigo.id}>{cardContent}</div>
+              );
+            })}
           </div>
 
           {artigos.length === 0 && (
