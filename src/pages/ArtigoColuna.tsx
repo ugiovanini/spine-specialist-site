@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import colunaInfografico from "@/assets/coluna-vertebral-infografico.png";
 
 const ArtigoColuna = () => {
   const [likes, setLikes] = useState(() => {
@@ -71,6 +72,18 @@ const ArtigoColuna = () => {
             <p className="text-muted-foreground leading-relaxed mb-8">
               Entender o que é a coluna vertebral e como ela funciona é o primeiro passo para sair de tratamentos paliativos e buscar resultados sustentáveis para sua mobilidade e autonomia na qualidade de vida.
             </p>
+
+            <figure className="my-10">
+              <img
+                src={colunaInfografico}
+                alt="Infográfico ilustrativo da coluna vertebral mostrando as regiões cervical, torácica, lombar, sacral e cóccix, além dos discos intervertebrais e curvaturas fisiológicas"
+                className="w-full max-w-md mx-auto rounded-2xl shadow-lg"
+                loading="lazy"
+              />
+              <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                Coluna Vertebral: O Eixo da Vida
+              </figcaption>
+            </figure>
 
             <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">
               1. A Estrutura: Um Equilíbrio entre Rigidez e Flexibilidade
