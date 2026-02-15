@@ -1,11 +1,28 @@
-import { useEffect } from "react";
-import { ArrowLeft, Phone } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowLeft, Phone, ThumbsUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 
 const ArtigoColuna = () => {
+  const [likes, setLikes] = useState(() => {
+    const saved = localStorage.getItem("like-artigo-coluna");
+    return saved ? parseInt(saved, 10) : 0;
+  });
+  const [hasLiked, setHasLiked] = useState(() => {
+    return localStorage.getItem("liked-artigo-coluna") === "true";
+  });
+
+  const handleLike = () => {
+    if (!hasLiked) {
+      const newLikes = likes + 1;
+      setLikes(newLikes);
+      setHasLiked(true);
+      localStorage.setItem("like-artigo-coluna", String(newLikes));
+      localStorage.setItem("liked-artigo-coluna", "true");
+    }
+  };
   useEffect(() => {
     document.title = "O que é a Coluna Vertebral? | Spine Specialist";
 
@@ -134,6 +151,22 @@ const ArtigoColuna = () => {
               <br />
               Converse com a gente e saia do ciclo da dor com quem é especialista em coluna vertebral.
             </p>
+
+            <div className="flex items-center gap-3 mt-10 mb-8">
+              <button
+                onClick={handleLike}
+                disabled={hasLiked}
+                className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 transition-all duration-300 font-medium text-sm ${
+                  hasLiked
+                    ? "border-primary bg-primary/10 text-primary cursor-default"
+                    : "border-muted-foreground/30 text-muted-foreground hover:border-primary hover:text-primary hover:bg-primary/5 cursor-pointer"
+                }`}
+              >
+                <ThumbsUp className={`w-5 h-5 ${hasLiked ? "fill-primary" : ""}`} />
+                {hasLiked ? "Curtido" : "Curtir"}
+                {likes > 0 && <span className="ml-1">{likes}</span>}
+              </button>
+            </div>
 
             <div className="bg-secondary/30 rounded-2xl p-8 text-center mt-12">
               <p className="text-foreground font-medium mb-6 text-lg">
