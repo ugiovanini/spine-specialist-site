@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ArrowLeft, ThumbsUp } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -11,6 +12,24 @@ import {
 } from "@/components/ui/accordion";
 
 const Quiropraxia = () => {
+  const [likes, setLikes] = useState(() => {
+    const saved = localStorage.getItem("like-quiropraxia");
+    return saved ? parseInt(saved, 10) : 0;
+  });
+  const [hasLiked, setHasLiked] = useState(() => {
+    return localStorage.getItem("liked-quiropraxia") === "true";
+  });
+
+  const handleLike = () => {
+    if (!hasLiked) {
+      const newLikes = likes + 1;
+      setLikes(newLikes);
+      setHasLiked(true);
+      localStorage.setItem("like-quiropraxia", String(newLikes));
+      localStorage.setItem("liked-quiropraxia", "true");
+    }
+  };
+
   useEffect(() => {
     // Title
     document.title = "Quiropraxia | Spine Specialist";
@@ -164,6 +183,15 @@ const Quiropraxia = () => {
       
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
+          {/* Voltar para Artigos */}
+          <Link
+            to="/artigos"
+            className="inline-flex items-center gap-2 text-primary hover:underline mb-6 text-sm font-medium"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Voltar para Artigos
+          </Link>
+
           {/* H1 */}
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Quiropraxia com foco em mobilidade e função
@@ -275,6 +303,23 @@ const Quiropraxia = () => {
               </Link>
             </nav>
           </section>
+
+          {/* Botão Curtir */}
+          <div className="flex items-center gap-3 mt-10 mb-8">
+            <button
+              onClick={handleLike}
+              disabled={hasLiked}
+              className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 transition-all duration-300 font-medium text-sm ${
+                hasLiked
+                  ? "border-primary bg-primary/10 text-primary cursor-default"
+                  : "border-muted-foreground/30 text-muted-foreground hover:border-primary hover:text-primary hover:bg-primary/5 cursor-pointer"
+              }`}
+            >
+              <ThumbsUp className={`w-5 h-5 ${hasLiked ? "fill-primary" : ""}`} />
+              {hasLiked ? "Curtido" : "Curtir"}
+              {likes > 0 && <span className="ml-1">{likes}</span>}
+            </button>
+          </div>
 
           {/* Disclaimer */}
           <p className="text-xs text-muted-foreground/70 text-center mt-12">

@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ArrowLeft, ThumbsUp } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -11,6 +12,24 @@ import {
 } from "@/components/ui/accordion";
 
 const Osteopatia = () => {
+  const [likes, setLikes] = useState(() => {
+    const saved = localStorage.getItem("like-osteopatia");
+    return saved ? parseInt(saved, 10) : 0;
+  });
+  const [hasLiked, setHasLiked] = useState(() => {
+    return localStorage.getItem("liked-osteopatia") === "true";
+  });
+
+  const handleLike = () => {
+    if (!hasLiked) {
+      const newLikes = likes + 1;
+      setLikes(newLikes);
+      setHasLiked(true);
+      localStorage.setItem("like-osteopatia", String(newLikes));
+      localStorage.setItem("liked-osteopatia", "true");
+    }
+  };
+
   useEffect(() => {
     // Title
     document.title = "Osteopatia | Spine Specialist";
@@ -163,6 +182,15 @@ const Osteopatia = () => {
       
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
+          {/* Voltar para Artigos */}
+          <Link
+            to="/artigos"
+            className="inline-flex items-center gap-2 text-primary hover:underline mb-6 text-sm font-medium"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Voltar para Artigos
+          </Link>
+
           {/* H1 */}
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Osteopatia: encontre a causa, corrija o que limita, deixe o corpo responder
@@ -278,6 +306,23 @@ const Osteopatia = () => {
           </section>
 
           {/* Disclaimer */}
+          {/* Botão Curtir */}
+          <div className="flex items-center gap-3 mt-10 mb-8">
+            <button
+              onClick={handleLike}
+              disabled={hasLiked}
+              className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 transition-all duration-300 font-medium text-sm ${
+                hasLiked
+                  ? "border-primary bg-primary/10 text-primary cursor-default"
+                  : "border-muted-foreground/30 text-muted-foreground hover:border-primary hover:text-primary hover:bg-primary/5 cursor-pointer"
+              }`}
+            >
+              <ThumbsUp className={`w-5 h-5 ${hasLiked ? "fill-primary" : ""}`} />
+              {hasLiked ? "Curtido" : "Curtir"}
+              {likes > 0 && <span className="ml-1">{likes}</span>}
+            </button>
+          </div>
+
           <p className="text-xs text-muted-foreground/70 text-center mt-12">
             As informações têm caráter educativo e não substituem avaliação individual. 
             Condutas e resultados variam conforme avaliação e adesão.
