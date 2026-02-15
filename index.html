@@ -23,6 +23,19 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
     <link rel="canonical" href="https://spinespecialist.com.br/" />
+    <script>
+      (function () {
+        try {
+          var redirect = sessionStorage.getItem("__redirect__");
+          if (redirect && redirect !== "/" && redirect !== location.pathname) {
+            sessionStorage.removeItem("__redirect__");
+            history.replaceState(null, "", redirect);
+          } else if (redirect === "/") {
+            sessionStorage.removeItem("__redirect__");
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
 
   <body>
