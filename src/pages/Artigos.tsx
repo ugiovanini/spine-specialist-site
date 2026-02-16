@@ -1,9 +1,11 @@
 import { FileText, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import colunaInfografico from "@/assets/coluna-vertebral-infografico.png";
+import dorLombarThumb from "@/assets/dor-lombar-thumb.png";
 
 const Artigos = () => {
   const artigos = [
@@ -13,6 +15,7 @@ const Artigos = () => {
       description: "Entenda a estrutura, função e importância da coluna vertebral para sua saúde, mobilidade e performance.",
       date: "14 Fev 2026",
       href: "/artigos/o-que-e-coluna-vertebral",
+      image: colunaInfografico,
     },
     {
       id: 2,
@@ -20,6 +23,7 @@ const Artigos = () => {
       description: "Dor lombar é uma das queixas mais comuns na população adulta. Entenda os fatores envolvidos e quando buscar avaliação especializada.",
       date: "16 Fev 2026",
       href: "/artigos/dor-lombar",
+      image: dorLombarThumb,
     },
     {
       id: 3,
@@ -64,16 +68,28 @@ const Artigos = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {artigos.map((artigo) => {
               const cardContent = (
-                <Card className="card-hover">
-                  <CardHeader>
-                    <CardTitle className="text-xl">{artigo.title}</CardTitle>
-                    <CardDescription>{artigo.date}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">{artigo.description}</p>
+                <Card className="card-hover overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className={`flex ${artigo.image ? 'flex-row' : 'flex-col'}`}>
+                      {artigo.image && (
+                        <div className="w-40 md:w-48 flex-shrink-0">
+                          <img
+                            src={artigo.image}
+                            alt={artigo.title}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                          />
+                        </div>
+                      )}
+                      <div className="p-5 flex flex-col justify-center">
+                        <h3 className="text-lg font-bold text-foreground leading-snug mb-1">{artigo.title}</h3>
+                        <p className="text-sm text-muted-foreground mb-3">{artigo.date}</p>
+                        <p className="text-muted-foreground text-sm leading-relaxed">{artigo.description}</p>
+                      </div>
+                    </div>
                   </CardContent>
                 </Card>
               );
