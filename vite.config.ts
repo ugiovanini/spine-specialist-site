@@ -22,6 +22,9 @@ function generateSitemapPlugin() {
         { path: '/quiropraxia', changefreq: 'monthly', priority: '0.7' },
         { path: '/osteopatia', changefreq: 'monthly', priority: '0.7' },
         { path: '/terapias-manuais', changefreq: 'monthly', priority: '0.7' },
+        // Article pages
+        { path: '/artigos/o-que-e-coluna-vertebral', changefreq: 'monthly', priority: '0.7' },
+        { path: '/artigos/dor-lombar', changefreq: 'monthly', priority: '0.7' },
       ];
 
       const urls = routes

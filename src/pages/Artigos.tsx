@@ -16,18 +16,25 @@ const Artigos = () => {
     },
     {
       id: 2,
+      title: "Dor Lombar: Entenda os fatores envolvidos e quando buscar avaliação especializada",
+      description: "Dor lombar é uma das queixas mais comuns na população adulta. Entenda os fatores envolvidos e quando buscar avaliação especializada.",
+      date: "16 Fev 2026",
+      href: "/artigos/dor-lombar",
+    },
+    {
+      id: 3,
       title: "Hérnia de Disco: Causas, Sintomas e Tratamentos",
       description: "Entenda tudo sobre a hérnia de disco e as opções de tratamento disponíveis.",
       date: "15 Jan 2024",
     },
     {
-      id: 3,
+      id: 4,
       title: "Postura Correta no Trabalho",
       description: "Dicas práticas para manter uma postura saudável durante o expediente.",
       date: "10 Jan 2024",
     },
     {
-      id: 4,
+      id: 5,
       title: "Exercícios para Fortalecer a Coluna",
       description: "Conheça exercícios seguros para fortalecer a musculatura da coluna.",
       date: "05 Jan 2024",
