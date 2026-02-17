@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import colunaInfografico from "@/assets/coluna-vertebral-infografico.png";
 import dorLombarThumb from "@/assets/dor-lombar-thumb.png";
+import dorCervicalThumb from "@/assets/dor-cervical-thumb.png";
 
 const Artigos = () => {
   const artigos = [
