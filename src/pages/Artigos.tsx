@@ -27,18 +27,25 @@ const Artigos = () => {
     },
     {
       id: 3,
+      title: "Dor Cervical: Entenda as causas e quando procurar avaliação especializada",
+      description: "Dor cervical é comum na rotina moderna e pode envolver fatores mecânicos e posturais. Entenda quando procurar avaliação especializada.",
+      date: "17 Fev 2026",
+      href: "/artigos/dor-cervical",
+    },
+    {
+      id: 4,
       title: "Hérnia de Disco: Causas, Sintomas e Tratamentos",
       description: "Entenda tudo sobre a hérnia de disco e as opções de tratamento disponíveis.",
       date: "15 Jan 2024",
     },
     {
-      id: 4,
+      id: 5,
       title: "Postura Correta no Trabalho",
       description: "Dicas práticas para manter uma postura saudável durante o expediente.",
       date: "10 Jan 2024",
     },
     {
-      id: 5,
+      id: 6,
       title: "Exercícios para Fortalecer a Coluna",
       description: "Conheça exercícios seguros para fortalecer a musculatura da coluna.",
       date: "05 Jan 2024",
