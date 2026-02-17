@@ -25,6 +25,7 @@ function generateSitemapPlugin() {
         // Article pages
         { path: '/artigos/o-que-e-coluna-vertebral', changefreq: 'monthly', priority: '0.7' },
         { path: '/artigos/dor-lombar', changefreq: 'monthly', priority: '0.7' },
+        { path: '/artigos/dor-cervical', changefreq: 'monthly', priority: '0.7' },
       ];
 
       const urls = routes
