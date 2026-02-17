@@ -32,7 +32,7 @@ const Artigos = () => {
       description: "Dor cervical é comum na rotina moderna e pode envolver fatores mecânicos e posturais. Entenda quando procurar avaliação especializada.",
       date: "17 Fev 2026",
       href: "/artigos/dor-cervical",
-    },
+      image: dorCervicalThumb,
     {
       id: 4,
       title: "Hérnia de Disco: Causas, Sintomas e Tratamentos",
