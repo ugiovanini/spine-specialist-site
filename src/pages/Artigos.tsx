@@ -36,18 +36,25 @@ const Artigos = () => {
     },
     {
       id: 4,
+      title: "Spine Specialist Process: Clareza, Segurança e Método no Cuidado da Coluna Vertebral",
+      description: "Conheça o modelo de cuidado estruturado em 6 etapas: avaliação funcional, plano personalizado e acompanhamento progressivo.",
+      date: "17 Fev 2026",
+      href: "/artigos/spine-specialist-process",
+    },
+    {
+      id: 5,
       title: "Hérnia de Disco: Causas, Sintomas e Tratamentos",
       description: "Entenda tudo sobre a hérnia de disco e as opções de tratamento disponíveis.",
       date: "15 Jan 2024",
     },
     {
-      id: 5,
+      id: 6,
       title: "Postura Correta no Trabalho",
       description: "Dicas práticas para manter uma postura saudável durante o expediente.",
       date: "10 Jan 2024",
     },
     {
-      id: 6,
+      id: 7,
       title: "Exercícios para Fortalecer a Coluna",
       description: "Conheça exercícios seguros para fortalecer a musculatura da coluna.",
       date: "05 Jan 2024",

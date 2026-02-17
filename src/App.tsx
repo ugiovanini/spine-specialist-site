@@ -10,6 +10,7 @@ import Artigos from "./pages/Artigos";
 import ArtigoColuna from "./pages/ArtigoColuna";
 import DorLombar from "./pages/artigos/DorLombar";
 import DorCervical from "./pages/artigos/DorCervical";
+import SpineSpecialistProcess from "./pages/artigos/SpineSpecialistProcess";
 import Videos from "./pages/Videos";
 import Audios from "./pages/Audios";
 import Notas from "./pages/Notas";
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/artigos/o-que-e-coluna-vertebral" element={<ArtigoColuna />} />
           <Route path="/artigos/dor-lombar" element={<DorLombar />} />
           <Route path="/artigos/dor-cervical" element={<DorCervical />} />
+          <Route path="/artigos/spine-specialist-process" element={<SpineSpecialistProcess />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/audios" element={<Audios />} />
           <Route path="/notas" element={<Notas />} />
