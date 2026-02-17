@@ -33,6 +33,7 @@ const Artigos = () => {
       date: "17 Fev 2026",
       href: "/artigos/dor-cervical",
       image: dorCervicalThumb,
+    },
     {
       id: 4,
       title: "Hérnia de Disco: Causas, Sintomas e Tratamentos",
