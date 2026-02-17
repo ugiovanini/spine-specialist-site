@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import colunaInfografico from "@/assets/coluna-vertebral-infografico.png";
 import dorLombarThumb from "@/assets/dor-lombar-thumb.png";
 import dorCervicalThumb from "@/assets/dor-cervical-thumb.png";
+import spineProcessThumb from "@/assets/spine-specialist-process-thumb.png";
 
 const Artigos = () => {
   const artigos = [
@@ -40,6 +41,7 @@ const Artigos = () => {
       description: "Conheça o modelo de cuidado estruturado em 6 etapas: avaliação funcional, plano personalizado e acompanhamento progressivo.",
       date: "17 Fev 2026",
       href: "/artigos/spine-specialist-process",
+      image: spineProcessThumb,
     },
     {
       id: 5,
