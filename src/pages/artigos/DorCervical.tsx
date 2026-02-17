@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import dorCervicalThumb from "@/assets/dor-cervical-thumb.png";
 
 const DorCervical = () => {
   const [likes, setLikes] = useState(() => {

@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import colunaInfografico from "@/assets/coluna-vertebral-infografico.png";
 import dorLombarThumb from "@/assets/dor-lombar-thumb.png";
+import dorCervicalThumb from "@/assets/dor-cervical-thumb.png";
 
 const Artigos = () => {
   const artigos = [
@@ -31,6 +32,7 @@ const Artigos = () => {
       description: "Dor cervical é comum na rotina moderna e pode envolver fatores mecânicos e posturais. Entenda quando procurar avaliação especializada.",
       date: "17 Fev 2026",
       href: "/artigos/dor-cervical",
+      image: dorCervicalThumb,
     },
     {
       id: 4,
