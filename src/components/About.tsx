@@ -6,6 +6,7 @@ const About = () => {
     "Graduado em Quiropraxia",
     "Pós-graduado em Osteopatia",
     "Pós-graduado em Quiropraxia",
+    "Pós-graduado em Massoterapia",
     "Pós-graduado em Fisioterapia nas Algias Posturais da Coluna Vertebral",
   ];
 
